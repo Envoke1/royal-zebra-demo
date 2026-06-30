@@ -1,10 +1,10 @@
 # Build stage
-FROM node:20 AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm ci --no-audit --maxsockets=1
 COPY . .
-RUN npx tsc -b && npx vite build
+RUN npm run build
 
 # Serve stage
 FROM nginx:alpine
