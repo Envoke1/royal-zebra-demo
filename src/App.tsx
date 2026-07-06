@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import AdJourney from './pages/AdJourney';
 import QRJourney from './pages/QRJourney';
+import LeadEngineJourney from './pages/LeadEngineJourney';
 import Dashboard from './pages/Dashboard';
 import Brands from './pages/Brands';
 import Network from './pages/Network';
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/journey-ad" element={<AdJourney />} />
         <Route path="/journey-qr" element={<QRJourney />} />
+        <Route path="/journey-lead-engine" element={<LeadEngineJourney />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/brands" element={<Brands />} />
         <Route path="/network" element={<Network />} />
