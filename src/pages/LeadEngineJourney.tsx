@@ -3,9 +3,9 @@ import { Link } from 'react-router';
 import {
   Funnel, Bot, ClipboardCheck, Layers, Phone, FileSignature, CalendarCheck, CheckCircle,
   ArrowRight, ArrowLeft, ChevronRight, Sparkles, User, PhoneCall, Mail, MapPin,
-  Zap, Clock, Target, Shield, MessageSquare, TrendingUp, Award, Star, Calendar,
-  Monitor, Users, BarChart3, Send, CheckSquare, Timer, Bell, PoundSterling,
-  Briefcase, Globe, AlertCircle, ThumbsUp
+  Target, Shield, MessageSquare, Award, Calendar,
+  Monitor, Users, BarChart3, Send, CheckSquare, Bell,
+  Briefcase, Globe, ThumbsUp
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -76,7 +76,6 @@ export default function LeadEngineJourney() {
 
   // Outreach state
   const [callSimulated, setCallSimulated] = useState(false);
-  const [callNotes, setCallNotes] = useState('');
 
   // Proposal state
   const [proposalSent, setProposalSent] = useState(false);
